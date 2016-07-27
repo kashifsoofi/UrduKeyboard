@@ -33,7 +33,7 @@ namespace KeyboardLib
 
         private UIView CreateRowView(Row row)
         {
-            var buttons = new List<UIButton>();
+            var buttons = new List<KeyButton>();
             var rowView = new UIView(new CGRect(0, 0, 320, 40));
             foreach (var key in row.Keys)
             {
@@ -46,9 +46,9 @@ namespace KeyboardLib
             return rowView;
         }
 
-        private UIButton CreateButton(Key key)
+        private KeyButton CreateButton(Key key)
         {
-            var button = new UIButton(UIButtonType.System);
+            var button = new KeyButton();
             button.Frame = new CGRect(0, 0, 20, 20);
             button.SetTitle(key.Text, UIControlState.Normal);
             button.SizeToFit();
@@ -56,10 +56,9 @@ namespace KeyboardLib
             button.TranslatesAutoresizingMaskIntoConstraints = false;
             button.BackgroundColor = UIColor.FromWhiteAlpha(1.0f, 1.0f);
             button.SetTitleColor(UIColor.DarkGray, UIControlState.Normal);
-            //button.Key = key;
+            button.Key = key;
 
             button.TouchUpInside += OnTouchUpInside;
-            //button.AddTarget(_uiInputViewController, new Selector("OnTouchUpInside"), UIControlEvent.TouchUpInside);
 
             return button;
         }
@@ -112,7 +111,7 @@ namespace KeyboardLib
             }
         }
 
-        private void AddButtonConstraints(List<UIButton> buttons, UIView container)
+        private void AddButtonConstraints(List<KeyButton> buttons, UIView container)
         {
             for (int i = 0; i < buttons.Count; i++)
             {
@@ -139,8 +138,7 @@ namespace KeyboardLib
                     leftConstraint = NSLayoutConstraint.Create(button, NSLayoutAttribute.Left, NSLayoutRelation.Equal, prevButton, NSLayoutAttribute.Right, 1.0f, 1.0f);
 
                     var firstButton = buttons[0];
-                    //var widthConstraint = NSLayoutConstraint.Create (button, NSLayoutAttribute.Width, NSLayoutRelation.Equal, firstButton, NSLayoutAttribute.Width, button.Key.Width ?? 1.0f, 0.0f);
-                    var widthConstraint = NSLayoutConstraint.Create(button, NSLayoutAttribute.Width, NSLayoutRelation.Equal, firstButton, NSLayoutAttribute.Width, 1.0f, 0.0f);
+                    var widthConstraint = NSLayoutConstraint.Create (button, NSLayoutAttribute.Width, NSLayoutRelation.Equal, firstButton, NSLayoutAttribute.Width, button.Key.Width ?? 1.0f, 0.0f);
 
                     container.AddConstraint(widthConstraint);
                 }

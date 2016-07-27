@@ -52,7 +52,7 @@ namespace NastaliqKeyboard
             var bottomConstraint = NSLayoutConstraint.Create(keyboardView, NSLayoutAttribute.Bottom, NSLayoutRelation.Equal, View, NSLayoutAttribute.Bottom, 1.0f, 0.0f);
             View.AddConstraints(new[] { widthConstraint, heightConstraint, leftConstraint, bottomConstraint });
 
-            nextKeyboardButton = new KeyButton(UIButtonType.System);
+            nextKeyboardButton = new KeyButton();
 
             nextKeyboardButton.SetTitle("Next Keyboard", UIControlState.Normal);
             nextKeyboardButton.SizeToFit();
@@ -69,10 +69,9 @@ namespace NastaliqKeyboard
 
         public void OnTouchUpInside(object sender, EventArgs e)
         {
-            //var button = sender as KeyButton;
-            //var text = button.Title(UIControlState.Normal);
-            //_uiInputViewController.TextDocumentProxy.InsertText(text);
-            TextDocumentProxy.InsertText("?");
+            var button = sender as KeyButton;
+            var text = button.Title(UIControlState.Normal);
+            TextDocumentProxy.InsertText(text);
         }
 
         public override void TextWillChange(IUITextInput textInput)
@@ -98,27 +97,6 @@ namespace NastaliqKeyboard
 
         private Keyboard LoadKeyboard(string name)
         {
-            //var keyboard = new Keyboard
-            //{
-            //    Rows = new List<Row>
-            //    {
-            //        new Row
-            //        {
-            //            Keys = new List<Key>
-            //            {
-            //                new Key { Text = "q" }
-            //            }
-            //        },
-            //        new Row
-            //        {
-            //            Keys = new List<Key>
-            //            {
-            //                new Key { Text = "a" }
-            //            }
-            //        }
-            //    }
-            //};
-
             var path = NSBundle.MainBundle.PathForResource(name, "json");
             using (var streamReader = new StreamReader(path))
             {

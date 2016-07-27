@@ -9,10 +9,6 @@ namespace KeyboardLib
     public class KeyButton : UIButton
     {
         public Key Key { get; set; }
-
-        public KeyButton(UIButtonType type)
-            : base(type)
-        { }
     }
 }
 
