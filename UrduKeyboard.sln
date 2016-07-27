@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanKeyboard", "RomanKeybo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NastaliqKeyboard", "NastaliqKeyboard\NastaliqKeyboard.csproj", "{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardLib", "KeyboardLib\KeyboardLib.csproj", "{D9587026-10A9-4174-8DA8-ADDB0BD020FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -39,5 +41,13 @@ Global
 		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Debug|iPhone.Build.0 = Debug|iPhone
+		{D9587026-10A9-4174-8DA8-ADDB0BD020FB}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{D9587026-10A9-4174-8DA8-ADDB0BD020FB}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{D9587026-10A9-4174-8DA8-ADDB0BD020FB}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{D9587026-10A9-4174-8DA8-ADDB0BD020FB}.Release|iPhone.Build.0 = Release|Any CPU
+		{D9587026-10A9-4174-8DA8-ADDB0BD020FB}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{D9587026-10A9-4174-8DA8-ADDB0BD020FB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{D9587026-10A9-4174-8DA8-ADDB0BD020FB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{D9587026-10A9-4174-8DA8-ADDB0BD020FB}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -115,11 +115,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RomanKeyboard\RomanKeyboard.csproj">
-      <IsAppExtension>true</IsAppExtension>
-      <Project>{48B4BCFD-E60C-436D-8DEB-87366A655059}</Project>
-      <Name>RomanKeyboard</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NastaliqKeyboard\NastaliqKeyboard.csproj">
       <IsAppExtension>true</IsAppExtension>
       <Project>{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}</Project>

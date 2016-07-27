@@ -90,6 +90,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -100,6 +103,18 @@
     <Compile Include="KeyboardViewController.designer.cs">
       <DependentUpon>KeyboardViewController.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\nastaliq_layout.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KeyboardLib\KeyboardLib.csproj">
+      <Project>{D9587026-10A9-4174-8DA8-ADDB0BD020FB}</Project>
+      <Name>KeyboardLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.AppExtension.CSharp.targets" />
 </Project>
