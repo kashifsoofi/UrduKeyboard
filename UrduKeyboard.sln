@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrduKeyboard", "UrduKeyboard\UrduKeyboard.csproj", "{645FD196-D070-47DD-9A81-EE3B2FE582B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanKeyboard", "RomanKeyboard\RomanKeyboard.csproj", "{48B4BCFD-E60C-436D-8DEB-87366A655059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NastaliqKeyboard", "NastaliqKeyboard\NastaliqKeyboard.csproj", "{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -19,5 +23,21 @@ Global
 		{645FD196-D070-47DD-9A81-EE3B2FE582B3}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{645FD196-D070-47DD-9A81-EE3B2FE582B3}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{645FD196-D070-47DD-9A81-EE3B2FE582B3}.Debug|iPhone.Build.0 = Debug|iPhone
+		{48B4BCFD-E60C-436D-8DEB-87366A655059}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{48B4BCFD-E60C-436D-8DEB-87366A655059}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{48B4BCFD-E60C-436D-8DEB-87366A655059}.Release|iPhone.ActiveCfg = Release|iPhone
+		{48B4BCFD-E60C-436D-8DEB-87366A655059}.Release|iPhone.Build.0 = Release|iPhone
+		{48B4BCFD-E60C-436D-8DEB-87366A655059}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{48B4BCFD-E60C-436D-8DEB-87366A655059}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{48B4BCFD-E60C-436D-8DEB-87366A655059}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{48B4BCFD-E60C-436D-8DEB-87366A655059}.Debug|iPhone.Build.0 = Debug|iPhone
+		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Release|iPhone.Build.0 = Release|iPhone
+		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B3568AEC-9F7D-48CF-9FBE-4D97F170A3D5}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
 EndGlobal
